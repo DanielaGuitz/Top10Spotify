@@ -1,0 +1,184 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #1DB954;
+}
+
+.queue-status {
+    font-size: 1.1em;
+    color: #b3b3b3;
+}
+
+/* Sección de reproducción actual */
+.now-playing {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.now-playing-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.now-playing-info h3 {
+    color: #1DB954;
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.play-btn {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-btn:hover {
+    background-color: #1ed760;
+}
+
+/* Cola de reproducción */
+.queue-section {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.queue-section h2 {
+    margin-bottom: 20px;
+    color: #1DB954;
+}
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #404040;
+    transition: background-color 0.3s;
+}
+
+.song-item:hover {
+    background-color: #333333;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.song-number {
+    font-size: 1.2em;
+    color: #b3b3b3;
+    min-width: 30px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-weight: 500;
+}
+
+.song-artist {
+    color: #b3b3b3;
+    font-size: 0.9em;
+}
+
+.song-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.priority-badge {
+    background-color: #1DB954;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.priority-btn, .spotify-btn {
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.priority-btn {
+    background-color: #404040;
+    color: white;
+}
+
+.spotify-btn {
+    background-color: #1DB954;
+    color: white;
+    display: inline-block;
+}
+
+.priority-btn:hover {
+    background-color: #505050;
+}
+
+.spotify-btn:hover {
+    background-color: #1ed760;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .song-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .song-controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

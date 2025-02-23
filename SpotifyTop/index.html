@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Queue Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 Spotify Queue Player</h1>
+            <div class="queue-status">
+                Canciones en cola: <span id="queue-count">0</span>
+            </div>
+        </header>
+
+        <main>
+            <section id="now-playing" class="now-playing">
+                <p>No hay canción reproduciéndose</p>
+            </section>
+
+            <section class="controls">
+                <button onclick="playNext()" class="play-btn">
+                    ▶️ Reproducir Siguiente
+                </button>
+            </section>
+
+            <section class="queue-section">
+                <h2>Cola de Reproducción</h2>
+                <div id="queue-container" class="queue-container">
+                    <!-- Las canciones se mostrarán aquí -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="Toptensongs.js"></script>
+</body>
+</html>
