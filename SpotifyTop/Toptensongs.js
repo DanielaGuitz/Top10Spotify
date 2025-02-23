@@ -1,5 +1,5 @@
 // Token de Spotify 
-const token = 'BQCaqF9xdLJOBKbL9KrrPBytimwfp1d3428SnsmevHv0bcZJdbWZTjlk3RCbeNSojxTRTkOL2kCP8PxBK5DF65Kl-MCYOPvnC7Y40KbY939Q4pq1skwTtyWrr_w1F14tZoA5gMru_1ljoqQMEdWaAT06T3qxqnXS4K2tbJf9F9-8NoalhBvwv0aC2AFujZRG-Oe1lcL7sxytGAlRkRY8coTBXMV_-N9oOSVzgxpRKJJ_HnmIBJDDrWXOXD1ea617oRTFPf1tCWIaN8e6K2IDyPU4dlDKHSiBDCRNs_foYnLteZb24-HEyfPTeUbP';
+const token = "";
 
 // Clase para la cola con prioridad
 class PriorityQueue {
